@@ -14,14 +14,13 @@ type Props = {
   isSearch?: boolean;
   title: string;
   initialData?: ComboBoxData;
+  selected: string;
+  setSelected: (selected: string) => void;
   data: ComboBoxData[];
 };
 
-const Combobox = ({ isSearch, data, initialData, title }: Props) => {
+const Combobox = ({ isSearch, data, title, selected, setSelected }: Props) => {
   const [open, setOpen] = useState<boolean>(false);
-  const [selected, setSelected] = useState<string>(
-    initialData ? initialData.value : ""
-  );
 
   return (
     <>
@@ -31,15 +30,15 @@ const Combobox = ({ isSearch, data, initialData, title }: Props) => {
             variant={"outline"}
             role="combobox"
             aria-expanded={open}
-            className="w-[100%] justify-between"
+            className="w-full justify-between"
           >
-            {data
-              ? data.find((d) => d.value === selected)?.label
-              : initialData?.label}
+            {data && data.length > 0
+              ? data.find((d) => d.value === selected)?.label ?? data[0].label
+              : ""}
             <ChevronDown className="opacity-50" />
           </Button>
         </PopoverTrigger>
-        <PopoverContent className="w-[100%] p-0">
+        <PopoverContent className="w-full">
           <Command>
             {isSearch && (
               <CommandInput>Không ${title} được tìm thấy</CommandInput>
