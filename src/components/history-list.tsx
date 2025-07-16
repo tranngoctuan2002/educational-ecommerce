@@ -9,7 +9,6 @@ import {
 import ProductDetail from "./products/product-detail";
 import { Product } from "./products/product";
 import { History } from "lucide-react";
-import useGlobal from "@/zustands/globals";
 import Image from "next/image";
 
 type Props = {
@@ -17,8 +16,6 @@ type Props = {
 };
 
 const HistoryList = ({ list }: Props) => {
-  const { history } = useGlobal();
-
   return (
     <Sheet>
       <SheetTrigger>
