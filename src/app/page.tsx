@@ -5,7 +5,6 @@ import ProductList from "@/components/products/product-list";
 import { ProductSkeleton } from "@/components/products/product-skekeleton";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
-import { Skeleton } from "@/components/ui/skeleton";
 import useDebounce from "@/hooks/useDebounce";
 import useGlobal from "@/zustands/globals";
 import { MessageCircle, Search, Send, Sparkles, X } from "lucide-react";

@@ -6,7 +6,6 @@ import {
   SheetTitle,
   SheetTrigger,
 } from "./ui/sheet";
-import { title } from "process";
 import ProductDetail from "./products/product-detail";
 import { Button } from "./ui/button";
 import { Product } from "./products/product";

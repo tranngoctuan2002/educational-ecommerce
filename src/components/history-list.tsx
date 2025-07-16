@@ -6,11 +6,9 @@ import {
   SheetTitle,
   SheetTrigger,
 } from "./ui/sheet";
-import { title } from "process";
 import ProductDetail from "./products/product-detail";
-import { Button } from "./ui/button";
 import { Product } from "./products/product";
-import { Heart, History } from "lucide-react";
+import { History } from "lucide-react";
 import useGlobal from "@/zustands/globals";
 import Image from "next/image";
 
