@@ -1,36 +1,168 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Educational E-commerce Platform
 
-## Getting Started
+A modern, responsive frontend website for an educational e-commerce platform that offers courses, learning materials, and online classes with AI-powered suggestions.
 
-First, run the development server:
+## 🚀 Technologies Used
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+- **Next.js 15** - React framework with App Router
+- **React 18** - UI library with hooks and modern patterns
+- **TypeScript** - Type-safe JavaScript
+- **Tailwind CSS** - Utility-first CSS framework
+- **Shadcn/ui** - Modern UI component library
+- **Lucide React** - Beautiful icons
+- **Zustand** - State management
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## ✨ Features
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+### Core Functionality
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+- **Product Listing**: Display educational courses with comprehensive details
+- **Search, Filter & Sort**: Real-time search with debouncing and price range filtering
+- **AI Suggestions**: Smart course recommendations based on user behavior
+- **Product Details Modal**: Detailed course information with smooth animations
+- **Favorites System**: Add/remove courses from favorites with localStorage persistence
+- **Viewing History**: Track recently viewed courses
 
-## Learn More
+### Advanced Features
 
-To learn more about Next.js, take a look at the following resources:
+- **AI Chatbot Advisor**: Interactive chat for course recommendations
+- **Responsive Design**: Optimized for desktop, tablet, and mobile
+- **Loading States**: Skeleton loaders and smooth transitions
+- **Error Handling**: Graceful error messages and fallbacks
+- **Toast Notifications**: User feedback for actions
+- **Local Storage**: Persistent favorites and viewing history
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+### UI/UX Features
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+- **Modern Design**: Clean, professional interface
+- **Smooth Animations**: Hover effects and transitions
+- **Accessibility**: Proper ARIA labels and keyboard navigation
+- **Mobile-First**: Responsive design principles
+- **Visual Feedback**: Loading states and success indicators
 
-## Deploy on Vercel
+## 🛠️ Setup Instructions
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+### Prerequisites
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+- Node.js 18+
+- npm or yarn
+
+### Installation
+
+1. **Clone or download the project files**
+
+2. **Install dependencies**
+   \`\`\`bash
+   npm install
+   \`\`\`
+
+3. **Run the development server**
+   \`\`\`bash
+   npm run dev
+   \`\`\`
+
+4. **Open your browser**
+   Navigate to `http://localhost:3000`
+
+### Build for Production
+
+\`\`\`bash
+npm run build
+npm start
+\`\`\`
+
+## 📁 Project Structure
+
+\`\`\`
+src/
+├── app/
+│ ├── globals.css # Global styles and Tailwind
+│ ├── layout.tsx # Root layout component
+│ └── page.tsx # Main application component
+├── components/ui/ # Shadcn/ui components
+│ ├── button.tsx
+│ ├── card.tsx
+│ ├── dialog.tsx
+│ ├── input.tsx
+│ ├── tabs.tsx
+│ └── ...
+└── hooks/
+└── zustand/
+\`\`\`
+
+## 🎯 Functionalities Included
+
+### Product Management
+
+- ✅ Display 10+ mock educational courses
+- ✅ Product cards with thumbnails, ratings, and pricing
+- ✅ Detailed product modal with full descriptions
+- ✅ Category-based organization
+
+### Search & Filtering
+
+- ✅ Real-time search by course name and description
+- ✅ Price range filtering (< 500K, 500K-1M, > 1M)
+- ✅ Combined search and filter functionality
+- ✅ Debounced search input
+
+### AI Features
+
+- ✅ Smart course suggestions based on user behavior
+- ✅ Loading states with skeleton components
+- ✅ Error handling for API failures
+- ✅ Interactive chatbot for course recommendations
+
+### User Experience
+
+- ✅ Favorites system with heart icons
+- ✅ Viewing history tracking
+- ✅ Toast notifications for user actions
+- ✅ Responsive design for all devices
+- ✅ Smooth animations and transitions
+
+### Data Persistence
+
+- ✅ localStorage for favorites
+- ✅ localStorage for viewing history
+- ✅ Session persistence across browser refreshes
+
+## 🔮 Future Improvements
+
+- **User Authentication**: Login/register functionality
+- **Shopping Cart**: Add courses to cart and checkout
+- **Course Progress**: Track learning progress
+- **Reviews & Ratings**: User-generated course reviews
+- **Advanced AI**: More sophisticated recommendation algorithms
+- **Payment Integration**: Stripe or PayPal integration
+- **Course Videos**: Video player integration
+- **Instructor Profiles**: Detailed instructor information
+- **Certificates**: Course completion certificates
+- **Social Features**: Course sharing and discussions
+
+## 🎨 Design Features
+
+- **Color Scheme**: Professional blue, black, white and gray palette
+- **Typography**: Inter font for excellent readability
+- **Icons**: Lucide React for consistent iconography
+- **Animations**: Smooth hover effects and transitions
+- **Layout**: Scroll view responsive design
+- **Components**: Reusable, modular component architecture
+
+## 📱 Mobile Optimization
+
+- Responsive scroll view layouts
+- Touch-friendly buttons and interactions
+- Optimized modal sizes for mobile screens
+- Swipe-friendly card interfaces
+- Mobile-optimized navigation
+
+## 🚀 Performance Features
+
+- **Code Splitting**: Automatic with Next.js App Router
+- **Image Optimization**: Next.js Image component
+- **Lazy Loading**: Components load as needed
+- **Efficient Rendering**: React 18 concurrent features
+- **Minimal Bundle**: Tree-shaking and optimization
+
+This platform provides a solid foundation for an educational e-commerce website with modern web development practices and user-centric design principles.
