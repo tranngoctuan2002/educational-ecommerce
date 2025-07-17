@@ -51,29 +51,37 @@ A modern, responsive frontend website for an educational e-commerce platform tha
 
 1. **Clone or download the project files**
 
+   ```
+   git clone <repository-url>
+   cd education-ecomerce
+
+   ```
+
 2. **Install dependencies**
-   \`\`\`bash
+
+   ```
    npm install
-   \`\`\`
+   ```
 
 3. **Run the development server**
-   \`\`\`bash
+
+   ```
    npm run dev
-   \`\`\`
+   ```
 
 4. **Open your browser**
    Navigate to `http://localhost:3000`
 
 ### Build for Production
 
-\`\`\`bash
+```
 npm run build
 npm start
-\`\`\`
+```
 
 ## 📁 Project Structure
 
-\`\`\`
+```
 src/
 ├── app/
 │ ├── globals.css # Global styles and Tailwind
@@ -88,7 +96,7 @@ src/
 │ └── ...
 └── hooks/
 └── zustand/
-\`\`\`
+```
 
 ## 🎯 Functionalities Included
 
