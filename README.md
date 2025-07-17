@@ -51,21 +51,20 @@ A modern, responsive frontend website for an educational e-commerce platform tha
 
 1. **Clone or download the project files**
 
-   ```
+   ```bash
    git clone <repository-url>
    cd education-ecomerce
-
    ```
 
 2. **Install dependencies**
 
-   ```
+   ```bash
    npm install
    ```
 
 3. **Run the development server**
 
-   ```
+   ```bash
    npm run dev
    ```
 
@@ -74,7 +73,7 @@ A modern, responsive frontend website for an educational e-commerce platform tha
 
 ### Build for Production
 
-```
+```bash
 npm run build
 npm start
 ```
